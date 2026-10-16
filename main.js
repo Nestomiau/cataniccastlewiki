@@ -1,0 +1,1 @@
+fetch("./header.html").then(Response=>Response.text()).then(data=>{document.getElementById('site-header').innerHTML=data})
