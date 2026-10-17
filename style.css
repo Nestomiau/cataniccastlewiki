@@ -4,12 +4,19 @@
 
     --c-generic-white:#FFFFFF;
     --c-transparent-generic-black: #00000080;
+    --c-grey-32: #323232;
+    --c-generic-black: #000000;
+
+    --c-link-blue: #1443cd; /* taken from 7:27 from https://www.youtube.com/watch?v=r4faygDPHgU - what a worthless coment*/
+
+    --c-shotgun-teal: #11bcb0;
 }
 body{
     color: var(--c-generic-white);
-    background-color: #323232;
+    background-color: var(--c-grey-32);
     font-family: var(--default-font);
     font-size: .95rem;
+    margin: 0;
 }
 
 
@@ -25,18 +32,40 @@ body{
     font-style: italic;
     text-decoration: underline;
 }
-.site-header_box{
+#site-header{
     display: flex;
     align-items: center;
     justify-content: center;
     width: 100%;
-    padding-left: 1.25rem;
-    padding-right: 1.25rem;
+    padding: .35rem 1.25rem .35rem 1.25rem;
     box-sizing: border-box;
+    background-color: var(--c-generic-black);
 }
 #site-header_cc-middle{
     align-self: stretch;
     flex: 1;
+    align-items: center;
+    align-content: center;
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    text-transform: uppercase;
+    font-size: 1.5rem;
+    font-weight: bold;
+    align-self: flex-start;
+}
+#site-header_cc-middle-searchlink:hover{
+    font-style: italic;
+    text-decoration: underline;
+}
+
+/* SIDEBAR */
+#site-sidebar {
+    width: 90%;
+    max-width: 13.5rem;
+    align-self: flex-start;
 }
 
 
@@ -52,4 +81,45 @@ body{
     transform: skew(-5.5deg);
     margin: 2em 0 2em 0;
     text-align: center;
+}
+.invisible-container{
+    padding: 1.5em;
+    margin: 2em 0 2em 0;
+    text-align: center;
+    line-height: 0rem;
+}
+#content-box{
+    margin: 1rem;
+}
+.generic-content-box{
+    background-color: var(--c-transparent-generic-black);
+    padding: 1.5em;
+    min-width: 50%;
+    text-align: center;
+}
+#content-box-parent{
+    flex:1;
+}
+#main_content{
+    display: flex;
+    box-sizing: border-box;
+    align-items: center;
+    justify-content: center;
+    width: 100%;
+    padding: 1rem;
+}
+
+/* SEARCH */
+#search-generic{
+    list-style-type: none;
+    padding: 0;
+    margin: 0;
+    font-size: 1.25rem;
+}
+
+
+/* REPLACE DEFs */
+a{
+    color: var(--c-link-blue);
+    text-decoration: none;
 }
