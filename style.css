@@ -63,8 +63,8 @@ body{
 
 /* SIDEBAR */
 #site-sidebar {
-    width: 90%;
-    max-width: 13.5rem;
+    display: none;
+    width: 13.5rem;
     align-self: flex-start;
 }
 
@@ -122,4 +122,14 @@ body{
 a{
     color: var(--c-link-blue);
     text-decoration: none;
+}
+
+/* WIDESCREEN */
+@media screen and (min-width: 1340px) {
+    #site-sidebar{
+        padding-right: 1em;
+        box-sizing: border-box;
+        justify-content: space-between;
+        display: block;
+    }
 }

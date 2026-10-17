@@ -1,6 +1,6 @@
 fetch("./header.html").then(Response=>Response.text()).then(data=>{document.getElementById('site-header').outerHTML=data})
 fetch("./sidebar.html").then(Response=>Response.text()).then(data=>{document.getElementById('site-sidebar').outerHTML=data})
-
+console.log(document.lastModified)
 function searchFunction() {
     var input, filter, ul, li, a, i, txtValue;
     input = document.getElementById("myInput");
