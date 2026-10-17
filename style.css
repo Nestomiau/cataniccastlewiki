@@ -30,6 +30,9 @@ body{
     align-items: center;
     justify-content: center;
     width: 100%;
+    padding-left: 1.25rem;
+    padding-right: 1.25rem;
+    box-sizing: border-box;
 }
 #site-header_cc-middle{
     align-self: stretch;
@@ -46,7 +49,7 @@ body{
 .generic-container{
     background-color: var(--c-transparent-generic-black);
     padding: 1.5em;
-    transform: skew(-3deg);
+    transform: skew(-5.5deg);
     margin: 2em 0 2em 0;
     text-align: center;
 }
