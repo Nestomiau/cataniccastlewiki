@@ -1,3 +1,6 @@
+let shit=document.createElement("div")
+document.getElementById("main_content").appendChild(shit)
+shit.setAttribute("id", "site-sidebar")
 fetch("./header.html").then(Response=>Response.text()).then(data=>{document.getElementById('site-header').outerHTML=data})
 fetch("./sidebar.html").then(Response=>Response.text()).then(data=>{document.getElementById('site-sidebar').outerHTML=data})
 console.log(document.lastModified)
