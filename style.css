@@ -1,6 +1,23 @@
+@font-face {
+    font-family: "Montserrat";
+    src: url("./assets/Montserrat-VariableFont_wght.ttf");
+}
+@font-face {
+    font-family: "Poppins-Bold";
+    src: url("./assets/Poppins-Bold.ttf");
+}
+@font-face {
+    font-family: "Metropolis-Bold";
+    src: url("./assets/Metropolis-Bold.ttf");
+}
+@font-face {
+    font-family: "OpenSans";
+    src: url("./assets/OpenSans-VariableFont_wdth\,wght.ttf");
+}
+
 :root{
-    --default-font:'Segoe UI','Segoe UI Emoji','Segoe UI Symbol','Lato','Liberation Sans','Noto Sans','Helvetica Neue','Helvetica',sans-serif;
-    --default-big-font:"Gotham",sans-serif;
+    --default-font:'OpenSans','Segoe UI Emoji','Segoe UI Symbol','Lato','Liberation Sans','Noto Sans','Helvetica Neue','Helvetica',sans-serif;
+    --default-big-font:"Metropolis-Bold",sans-serif;
 
     --c-generic-white:#FFFFFF;
     --c-transparent-generic-black: #00000080;
